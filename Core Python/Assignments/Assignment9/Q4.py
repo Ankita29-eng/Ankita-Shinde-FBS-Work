@@ -1,0 +1,9 @@
+# Write a program to find sum of n numbers using recursion.
+def sum_n (n):
+    if (n > 0):
+        return n+sum_n(n-1)
+    else:
+        return 0 
+n = int (input("Enter the value of n:"))
+result = sum_n(n)
+print (result)
